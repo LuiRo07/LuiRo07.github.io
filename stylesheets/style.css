@@ -1,0 +1,111 @@
+body {
+    background : #142d4c; 
+}
+
+.nav-container {
+    list-style-type: none;
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    height: auto;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* hovering effect */
+li a {
+    position: relative;
+    display: inline-block;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+
+.link:hover::before {
+    scale: 1;
+}
+
+
+.about-me, .contact-title, .projects {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    margin-top: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+.about-me p, .contact-list a {
+    font-family: 'Sans', 'Times New Romans', 'Lucida';
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 2;
+    width: 70VW;
+    color: white;
+}
+
+#name-logo {
+    font-family: 'Dancing Script', 'Times New Roman', cursive; 
+    font-size: 28px;
+}
+
+/* contact.html */
+.contact-title h1 {
+    text-align: center;
+    color: white;
+}
+
+.contact-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.contact-list>li a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-list a:hover {
+    color: #5b89ff;
+}
+
+/* projects.html */
+.projects a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects video {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
