@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Rosas</title>
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+
+    <!-- 3rd party fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.png"/>
+    <title>Luis Rosas</title>
 </head>
 
 <body>
@@ -26,21 +29,79 @@
             </div>
         </nav>
         <section class="introduction">
-            <div class="about-me">
-                <h1>Welcome</h1>
-                <p>
-                   Hey there, My name is Luis Rosas and I'm a front end developer who enjoys building
-                   user interfaces with pixel-perfect detailing. I love creating aesthetically beautiful
-                   interfaces for users to enjoy. 
-                </p>
+            <div class="intro-content-container">
+                <div class="welcome">
+                    <h1 class="intro-title">Welcome</h1>
+                    <p>
+                       I'm Luis, a front-end developer who loves creating beautiful 
+                       things on the web.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img class="profilePic" src="assets/images/profilePic.jpeg" alt="Profile Picture of Luis Rosas">
+                </div>
             </div>
         </section>
-        <footer>
-            <div class="footer-container">
-            <!-- copyrights -->
-                <p>&#169; Luis D. Rosas</p>
+        <section class="skill-sect">
+            <div class="skillset-container">
+                <div class="designer">
+                    <h2 class="skill-title">Designing Tools</h2>
+                    <uL class="skill-list">
+                        <li>Figma</li>
+                        <li>Adobe  XD</li>
+                        <li>Color  Theory & Design Principles</li>
+                        <li>Accessibility</li>
+                        <li>Logo Design</li>
+                    </uL>
+                </div>
+                <hr>
+                <div class="developer">
+                    <h2 class="skill-title">Developer Tools</h2>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>Responsive Designs</li>
+                        <li>SEO</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                    </ul>
+                </div>
             </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer-container grid-container">
+            <div class="self-bio">
+                <div class="sm-image-container">
+                    <img class="profilePic" src="assets/images/profilePic.jpeg" alt="picture of Luis">
+                </div>
+                <p class="bio-subtitle roboto-light">
+                    I am a front-end Developer with design skills to
+                    bring any creative idea to the web.
+                </p>
+            </div>
+            <div class="secondary-nav">
+                <ul class="social-links inline-flex-container">
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/github-icon.png" alt="github icon" class="icon"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/linkedin.png" alt="linkedIn icon" class="icon"/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-nav inline-flex-container">
+                    <li><a href="#" class="roboto-regular">About</a></li>
+                    <li><a href="#" class="roboto-regular">Portfolio</a></li>
+                    <li><a href="#" class="roboto-regular">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
