@@ -1,21 +1,161 @@
-body {
-    background : #142d4c; 
+/* global variables */
+:root {
+    --primary-color-yaleBlue: #003566;
+    --secondary-color-oxfordBlue: #001D3D;
+    --primary-accent-gold: #FFD60A;
+    --secondary-accent-yellow: #FFC300;
+    --secondary-accent-active: #CC9C00;
+    --neutral-color-black: #000814;
+    --secondary-neutral-grey: #b2b2b2;
+    --project01-color-purple: #9906f5;
+    --footer-background: #000814bf;
 }
 
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d5d0d0;
+    color: #fff;
+    overflow-x: hidden;  /* prevents horizontal scrollbar when adding a new section */
+}
+
+
 .nav-container {
-    list-style-type: none;
-    display: flex; 
-    justify-content: space-between;
-    align-items: baseline;
+    width: inherit;
+    height: 15vh;
+    padding: .2em;
+    background-color: var(--primary-color-yaleBlue);
+}
+
+.nav-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link a {
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Roboto', 'serif';
+}
+
+/* components */
+#cta {
+    padding: .7em .5em;
+    background-color: var(--primary-accent-gold);
+    color: var(--primary-color-yaleBlue);
+    border: 3px solid var(--primary-accent-gold);
+    border-radius: 8px;
+    transition: .4s;
+}
+
+#cta:hover {
+    background-color: var(--primary-color-yaleBlue);
+    color: var(--primary-accent-gold);
+}
+
+/* introduction section */
+.introduction {
+    width: inherit;
+    height:  80vh;
+    background-color: var(--secondary-color-oxfordBlue);
+}
+
+.intro-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.welcome {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.25rem;
+}
+
+.intro-title {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 4em;
+    color: var(--secondary-accent-yellow);
+    margin-bottom: .2rem;
+}
+
+.intro-subtitle {
+    font-size: 1.5em;
+}
+
+.image-container {
+    width: 300px;
+    height: 380px;
+    overflow: hidden;
+    object-fit: center;
+    background: var(--neutral-color-black);
+}
+
+.profilePic {
+    width: 100%;
     height: auto;
 }
 
-.nav-container a {
-    text-decoration: none;
-    color: white;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 20px;
+/* skill-section */
+.skill-sect {
+    width: inherit;
+    height: 80vh;
+    background-color: var(--primary-color-yaleBlue);
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1rem;
+}
+
+.skillset-container {
+    position: relative;
+    bottom: 13%;
+    width: 50vw;
+    min-width: 502.8px;
+    height: 80%;
+    background-color: var(--secondary-neutral-grey);
+    margin: 0 auto;
+    box-shadow: 16px 19px 14px #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%  7%;
+    column-gap: 2.5em;
+    text-align: center;
+}
+
+hr {
+    background-color: var(--neutral-color-black);
+    border: 0;
+    min-width: 6px;
+    height: 85%;
+}
+
+
+.skill-title {
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.designer, .developer {
+    color: var(--primary-color-yaleBlue);
+}
+
+.skill-list {
+    margin-top: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+    font-size: 1.3em;
 }
 
 /* hovering effect */
@@ -42,31 +182,14 @@ li a {
     scale: 1;
 }
 
-
-.about-me, .contact-title, .projects {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    text-align: center;
-    margin-top: 30px;
-    background-color: transparent;
-    color: white;
-}
-
-.about-me p, .contact-list a {
-    font-family: 'Sans', 'Times New Romans', 'Lucida';
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    line-height: 2;
-    width: 70VW;
-    color: white;
-}
-
 #name-logo {
     font-family: 'Dancing Script', 'Times New Roman', cursive; 
     font-size: 28px;
+    transition: 1s;
+}
+
+#name-logo:hover {
+    transform: scale(1.5);
 }
 
 /* contact.html */
@@ -92,20 +215,125 @@ li a {
     color: #5b89ff;
 }
 
-/* projects.html */
-.projects a {
-    color: white;
-    text-decoration: none;
-}
-
-.projects video {
-    width: 100%;
-}
 
 /* footer */
-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: white;
+.footer-container {
+    width: inherit;
+    height: 30vh;
+    background-color: var(--footer-background);
+    padding: 3rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.self-bio {
+    display: flex;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.bio-subtitle {
+    margin-left: 1rem;
+    width: 8em;
+    height: 9.7em;
+    font-size: 1.3rem;
+}
+
+.secondary-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav a{
+    color: var(--secondary-accent-yellow);
+    text-decoration: underline;
+}
+
+.footer-social {
+    color: var(--secondary-neutral-grey);
+    font-size: 1.2em;
+}
+
+/* fonts */
+.roboto-regular {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.inline-flex-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* images */
+.sm-image-container {
+    width: 150px;
+    height: 150px;
+    background: var(--neutral-color-black);
+    overflow: hidden;
+    object-fit: center;
+}
+
+/* About-me.html */
+.about-me {
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--secondary-color-oxfordBlue);
+}
+
+
+.about-content {
+    margin: 0 auto;
+    width: 40%;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.montserrat-regular {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 2em;
+    color: var(--primary-accent-gold);
+    margin-bottom: .2em;
+    text-align: center;
+}
+
+.my-story {
+    font-family: 'Robot', 'sans-serif';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    font-size: 1.8em;
+    word-spacing: .1em;
+}
+
+/* project.html */
+
+.project-section {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--secondary-color-oxfordBlue);
+    color: #fff;
 }
