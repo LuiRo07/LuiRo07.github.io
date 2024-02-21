@@ -4,52 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Rosas</title>
+    <!-- regular styles / reset -->
+    <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- 3rd party fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.png"/>
+    <title>Luis Rosas</title>
 </head>
 
 <body>
-    <nav>
-        <ul class="nav-container">
-            <li><a class="link" href="about-me.html">About Me</a></li>
-            <li><a class="link" href="#">Projects</a></li>
-            <li><a id="name-logo" href="index.html">Luis Rosas</a></li>
-            <li><a class="link" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="about-me">
-        <h1>My Projects</h1>
-        <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-           sed do eiusmod tempor incididunt ut labore et dolore magna 
-           aliqua. Arcu vitae elementum curabitur vitae nunc sed velit. 
-           Cursus metus aliquam eleifend mi in nulla. At in tellus integer 
-           feugiat scelerisque.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-           sed do eiusmod tempor incididunt ut labore et dolore magna 
-           aliqua. Arcu vitae elementum curabitur vitae nunc sed velit. 
-           Cursus metus aliquam eleifend mi in nulla. At in tellus integer 
-           feugiat scelerisque.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-           sed do eiusmod tempor incididunt ut labore et dolore magna 
-           aliqua. Arcu vitae elementum curabitur vitae nunc sed velit. 
-           Cursus metus aliquam eleifend mi in nulla. At in tellus integer 
-           feugiat scelerisque.
-        </p>
-        <section class="projects">
-            <h2>Memory Card Game</h2>
-            <video widht="500" height="400" autoplay="true">
-                <source src="assets\MemoryGame_project.mp4">
-            </video> 
-            <a href="projects/memory_cardGame/game.html">Click here to launch game</a>
+    <main>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-link">
+                    <li><a id="name-logo" href="index.html">Luis Rosas</a></li>
+                    <li><a class="link" href="about-me.html">About Me</a></li>
+                    <li><a class="link" href="#">Projects</a></li>
+                    <li><a id="cta" href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="project-section">
+                <div class="project-module-container">
+                    <div class="memory-project">
+                        <h1 class="project-title">Memory Card Game</h1>
+                        <p class="project-description">
+                            I believe memory card games is a fun and essential way to increase one's own memory, so it's important
+                            to start young, so this project was made with a young-end user like a child in mind. I used vibrant and attracting
+                            colors to appeal for younger audience, I used a gradient background to blend the two colors. I believe
+                            with a good design with these kinds of colors need a fun and funky type of font style, so I used a 
+                            3rd party font-style. The card game itself is triggered by a start button, and I used JavaScript to 
+                            add the dynamics of the game itself. One of the features I integrated with this project was a counter 
+                            to keep score of the tries it takes for a person to complete the game.
+                        </p>
+                        <img class="screenshot" src="projects/memory_cardGame/assets/media preview/memory-project_screenshot.png" alt="screenshot of memory game project" />
+                    </div>
+                </div>  
+            </div>
         </section>
-    </div>
+    </main>
     <footer>
-        <footer>
-            <p>&#169; Luis D. Rosas</p>
+        <div class="footer-container grid-container">
+            <div class="self-bio">
+                <div class="sm-image-container">
+                    <!-- <img class="profilePic" src="assets/images/profilePic.jpeg" alt="picture of Luis"> -->
+                </div>
+                <p class="bio-subtitle roboto-light">
+                    I am a front-end Developer with design skills to
+                    bring any creative idea to the web.
+                </p>
+            </div>
+            <div class="secondary-nav">
+                <ul class="social-links inline-flex-container">
+                    <li>
+                        <a href="#" class="footer-social">
+                            <img src="assets/icons/github-icon.png" alt="github icon" class="icon"/>Github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social">
+                            <img src="assets/icons/linkedin.png" alt="linkedIn icon" class="icon"/>linkedIn
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-nav inline-flex-container">
+                    <li><a href="about-me.html" class="roboto-regular">About</a></li>
+                    <li><a href="#" class="roboto-regular">Portfolio</a></li>
+                    <li><a href="contact.html" class="roboto-regular">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
