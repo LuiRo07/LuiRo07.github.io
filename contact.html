@@ -2,31 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+
+    <!-- 3rd party fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.png"/>
+    <title>Luis Rosas</title>
 </head>
+
 <body>
-    <nav>
-        <ul class="nav-container">
-            <li><a class="link" href="about-me.html">About Me</a></li>
-            <li><a class="link" href="projects.html">Projects</a></li>
-            <li><a id="name-logo" href="index.html">Luis Rosas</a></li>
-            <li><a class="link" href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="contact-title">
-        <h1>You can reach me through any of the following sites:</h1>
-        <ul class="contact-list">
-            <li><a href="mailto:luisr1993@yahoo.com">my personal email</a></li>
-            <li><a href="https://www.linkedin.com/in/luisdanyrosas/">linkedin</a></li>
-            <p>Feel free to checkout my other projects that are not listed here at:</p>
-            <li><a href="https://github.com/LRosas93">github</a></li>
-        </ul>
-    </section>
+    <main>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-link">
+                    <li><a id="name-logo" href="index.html">Luis Rosas</a></li>
+                    <li><a class="link" href="about-me.html">About Me</a></li>
+                    <li><a class="link" href="projects.html">Projects</a></li>
+                    <li><a id="cta" href="#">Get in Touch</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="contact-form">
+            <div class="section-container">
+                <h1>Contact Me</h1>
+                <div class="circle-container">
+                    <h2 class="section-title">Let's get in Touch!</h2>
+                    <ul>
+                        <li>
+                            <a href="mailto: luisr1993@yahoo.com" class="contact-link">
+                                <img src="assets/icons/email.png" alt="email icon" class="icon mail-icon"/> Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/luis46rosas" class="contact-link">
+                                <img src="assets/icons/linkedin.png" alt="linkedin icon" class="icon"/> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container grid-container">
+                <div class="self-bio">
+                    <div class="sm-image-container">
+                        <img class="profilePic" src="assets/images/profilePic.jpeg" alt="picture of Luis">
+                    </div>
+                    <p class="bio-subtitle roboto-light">
+                        I am a front-end Developer with design skills to
+                        bring any creative idea to the web.
+                    </p>
+                </div>
+                <div class="secondary-nav">
+                    <ul class="social-links inline-flex-container">
+                        <li>
+                            <a href="#" class="footer-social" target="_blank">
+                                <img src="assets/icons/github-icon.png" alt="github icon" class="icon"/>Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social" target="_blank">
+                                <img src="assets/icons/linkedin.png" alt="linkedIn icon" class="icon"/>linkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/LuiRo45" class="footer-social" target="_blank">
+                                <img src="assets/icons/codepen.png" alt="codepen icon" class="icon"/> Codepen
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav inline-flex-container">
+                        <li><a href="about-me.html" class="roboto-regular">About</a></li>
+                        <li><a href="projects.html" class="roboto-regular">Portfolio</a></li>
+                        <li><a href="#" class="roboto-regular">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
-<!-- todos (bugs): links hover effect applies when cursor is few pixels away -->
