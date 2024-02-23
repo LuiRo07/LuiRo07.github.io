@@ -22,7 +22,7 @@ body {
     height: 100vh;
     background-color: #d5d0d0;
     color: #fff;
-    overflow-x: hidden;  /* prevents horizontal scrollbar when adding a new section */
+    overflow-x: hidden;
 }
 
 
@@ -33,6 +33,7 @@ body {
     background-color: var(--primary-color-yaleBlue);
 }
 
+
 .nav-link {
     width: 100%;
     height: 100%;
@@ -41,13 +42,19 @@ body {
     align-items: center;
 }
 
+#name-logo {
+    font-family: 'Dancing Script', 'Times New Roman', cursive; 
+    font-size: 1.8vw;
+    transition: 1s;
+}
+
 .nav-link a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     font-family: 'Roboto', 'serif';
 }
 
-/* components */
+/* components hovering effects*/
 #cta {
     padding: .7em .5em;
     background-color: var(--primary-accent-gold);
@@ -55,11 +62,54 @@ body {
     border: 3px solid var(--primary-accent-gold);
     border-radius: 8px;
     transition: .4s;
+    font-size: 1.8vw;
+}
+
+li a {
+    position: relative;
+    display: inline-block;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+
+.link:hover::before {
+    scale: 1;
+}
+
+#name-logo:hover {
+    transform: scale(1.5);
 }
 
 #cta:hover {
     background-color: var(--primary-color-yaleBlue);
     color: var(--primary-accent-gold);
+}
+
+/* tablet */
+@media only screen and (max-width: 760px) {
+    .nav-link a {
+        font-size: 2.4vw;
+    }
+
+    #name-logo {
+        font-size: 2.4vw;
+    }
+
+    #cta {
+        font-size: 2.4vw;
+    }
 }
 
 /* introduction section */
@@ -88,27 +138,39 @@ body {
 }
 
 .intro-title {
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: 4em;
     color: var(--secondary-accent-yellow);
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 5vw;
     margin-bottom: .2rem;
 }
 
 .intro-subtitle {
-    font-size: 1.5em;
+    font-size: 1.8vw;
 }
 
 .image-container {
-    width: 300px;
-    height: 380px;
+    width: 18vw;
+    height: auto;
     overflow: hidden;
     object-fit: center;
-    background: var(--neutral-color-black);
+    background: transparent;
 }
 
 .profilePic {
     width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 760px) {
+    .image-container {
+        width: 25vw;
+        height: auto;
+    }
+
+    .profilePic {
+        width: auto;
+        height: 100%;
+    }
 }
 
 /* skill-section */
@@ -124,14 +186,13 @@ body {
     position: relative;
     bottom: 13%;
     width: 50vw;
-    min-width: 502.8px;
     height: 80%;
     background-color: var(--secondary-neutral-grey);
     margin: 0 auto;
     box-shadow: 16px 19px 14px #000;
     display: flex;
     justify-content: space-between;
-    padding: 4%  7%;
+    padding: 4%;
     column-gap: 2.5em;
     text-align: center;
 }
@@ -140,14 +201,14 @@ body {
 hr {
     background-color: var(--neutral-color-black);
     border: 0;
-    min-width: 6px;
+    width: 6px;
     height: 85%;
 }
 
 
 .skill-title {
     text-decoration: underline;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 .designer, .developer {
@@ -158,78 +219,52 @@ hr {
     margin-top: 1.2em;
     line-height: 1.6em;
     text-align: center;
-    font-size: 1.3vw;
+    font-size: 1.2em;
 }
 
-/* hovering effect */
-li a {
-    position: relative;
-    display: inline-block;
-}
+/* tablet */
+@media only screen and (max-width: 760px) {
+    .skillset-container {
+        width: 60%;
+        height: 60%;
+        gap: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 1em;
+    }
 
-.link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 4px;
-    scale: 0 1;
-    transform-origin: left;
-    transition: scale 0.25s;
-}
+    .designer, .developer {
+        font-size: 15px;
+        margin-top: 1.5em;
+    }
 
-.link:hover::before {
-    scale: 1;
-}
+    hr {
+        width: 2px;
+        align-self: center;
+    }
 
-#name-logo {
-    font-family: 'Dancing Script', 'Times New Roman', cursive; 
-    font-size: 2em;
-    transition: 1s;
-}
+    .skill-title {
+        font-size: 1.2em;
+    }
 
-#name-logo:hover {
-    transform: scale(1.5);
+    .skill-list {
+        font-size: 1em;
+    }
 }
-
-/* contact.html */
-.contact-title h1 {
-    text-align: center;
-    color: white;
-}
-
-.contact-list li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 20px;
-}
-
-.contact-list>li a {
-    text-decoration: none;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.contact-list a:hover {
-    color: #5b89ff;
-}
-
 
 /* footer */
 .footer-container {
-    width: inherit;
-    height: 30vh;
+    width: 100%;
+    height: auto;
     background-color: var(--footer-background);
     padding: 3rem;
+    font-size: 16px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 70% 30%;
 }
 
 .self-bio {
@@ -238,16 +273,17 @@ li a {
     font-size: 1rem;
 }
 
+.secondary-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .bio-subtitle {
     margin-left: 1rem;
     width: 8em;
     height: 9.7em;
-    font-size: 1.3rem;
-}
-
-.secondary-nav {
-    display: flex;
-    justify-content: space-around;
+    font-size: 1em;
 }
 
 .footer-nav a{
@@ -257,7 +293,7 @@ li a {
 
 .footer-social {
     color: var(--secondary-neutral-grey);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* fonts */
@@ -275,8 +311,8 @@ li a {
 
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
     margin-right: 1em;
 }
@@ -291,9 +327,35 @@ li a {
 .sm-image-container {
     width: 150px;
     height: 150px;
-    background: var(--neutral-color-black);
+    background: transparent;
     overflow: hidden;
-    object-fit: center;
+}
+
+.profilePic {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 760px) {
+
+    .self-bio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm-image-container {
+        width: 110px;
+        height: auto;
+    }
+
+    .bio-subtitle {
+        margin: 0;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* About-me.html */
