@@ -95,7 +95,7 @@ li a {
 }
 
 /* tablet */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
     .nav-link {
         font-size: 1rem;
     }
@@ -161,7 +161,7 @@ li a {
     height: auto;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
     :root {
         font-size: 18px;
     }
@@ -243,7 +243,7 @@ hr {
 }
 
 /* tablet */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
     .skill-sect {
         height: 67vh;
     }
@@ -361,7 +361,7 @@ hr {
     height: auto;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
 
     .footer-container {
         padding: 1rem;
@@ -389,8 +389,6 @@ hr {
 
 /* About-me.html */
 .about-me {
-    width: 100vw;
-    height: 80vh;
     background-color: var(--secondary-color-oxfordBlue);
 }
 
@@ -398,10 +396,12 @@ hr {
 .about-content {
     margin: 0 auto;
     width: 40%;
+    min-width: 720px;
     height: 100%;
     font-size: .8rem;
     overflow: hidden;
     padding: 5em;
+    background-color: transparent;
 }
 
 .about-title {
@@ -420,7 +420,7 @@ hr {
     width: auto;
     height: 185px;
     float: left;
-    margin: 0 1em 1em 0;
+    margin: 0 1em 0;
 }
 
 .my-story {
@@ -430,32 +430,50 @@ hr {
     font-style: normal;
     line-height: 1.5em;
     font-size: 1.8em;
-    word-spacing: .1em;
     margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .about-content {
+        min-width: 100%;
+        font-size: 1rem;
+    }
+
+    .my-story {
+        font-size: 1.3rem;
+    }
 }
 
 /* project.html */
 
 .project-section {
-    width: 100%;
-    height: 100vh;
     background-color: var(--secondary-color-oxfordBlue);
     color: #fff;
     overflow: hidden;
+    padding: 1rem;
 }
 
 .project-module-container {
     margin: 0 auto;
-    width: 65%;
+    max-width: 1164px;
+    width: 100%;
     height: 100%;
 }
 
-.memory-project {
+.memory-project,
+.tea-cozy-site,
+.fotomatic-site,
+.the-cozy-cup-site
+{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% auto;
     overflow: hidden;
-    padding: 10em;
+    padding: 5em;
     gap: 2em;
 }
 
@@ -473,10 +491,14 @@ hr {
     line-height: 1.5em;
 }
 
+.project-link {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 2em;
+    color: var(--secondary-accent-yellow);
+}
+
 .memoryGame-link {
     color: var(--project01-color-purple);
-    font-family: 'Robot' 'sans-serif';
-    font-size: 2em;
 }
 
 .screenshot {
@@ -489,7 +511,7 @@ hr {
 
 .contact-form {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: var(--secondary-color-oxfordBlue);
 }
 
@@ -535,4 +557,21 @@ hr {
     margin-bottom: 1em;
 }
 
+@media only screen and (max-width: 768px) {
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .circle-container {
+        width: 346px;
+        height: 346px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .circle-container {
+        width: 290px;
+        height: 290px;
+    }
+}
 

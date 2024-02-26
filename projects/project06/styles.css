@@ -138,9 +138,10 @@ header .mobile {
         list-style-type: none;
     }
 
-    .menu-toggle:hover {
+    /* add hamburger menu to toggle nav bar */
+    /* .menu-toggle:hover {
 
-    }
+    } */
 }
 
 /* featured-section */
