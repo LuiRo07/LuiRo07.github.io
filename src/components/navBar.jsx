@@ -53,17 +53,22 @@ function Navbar() {
           <ul>
             <li>
               <a href="#" className="text-lg">
-                Menu item 1
+                Home
               </a>
             </li>
             <li>
               <a href="#" className="text-lg">
-                Menu item 2
+                My Story
               </a>
             </li>
             <li>
               <a href="#" className="text-lg">
-                Menu item 3
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-lg">
+                Contact
               </a>
             </li>
           </ul>
