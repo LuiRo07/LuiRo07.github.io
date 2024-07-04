@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CheckBox from './UI/Checkbox';
+import HamburgerMenu from './UI/hamburgerBtn';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,18 +16,10 @@ function Navbar() {
           Luis Rosas
         </a>
       </div>
-      <div className="lg:hidden">
-        <CheckBox />
-        <button
-          className={`hamburger ${isOpen? 'is-active' : ''}`}
-          onClick={handleToggle}
-        >
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-        </button>
+      <div className="md:hidden">
+        <HamburgerMenu />
       </div>
-      <ul className="hidden lg:flex justify-between items-center text-neutralWhite">
+      <ul className="hidden md:flex justify-between items-center text-neutralWhite">
         <li>
           <a href="#" className="text-lg">
             Home
