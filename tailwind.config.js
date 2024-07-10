@@ -16,7 +16,7 @@ export default {
       },
       screens: {
         'xs': '310px',
-      }
+      },
     },
   },
   plugins: [],

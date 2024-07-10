@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import NavBar from './components/navBar';
-import './App.css'
+import MobileNavBar from "./components/UI/Mobile/MobileNavBar";
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <NavBar />
+    <MobileNavBar />
   )
 }
 
