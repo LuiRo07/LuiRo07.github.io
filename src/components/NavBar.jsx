@@ -16,44 +16,36 @@ const NavBar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-primaryBlue text-gray-300">
       <div>
-        <img src={Logo} alt="Name logo" className="w-[50px]" />
+        <Link to="home" smooth={true} duration={500}>
+          <img src={Logo} alt="Name logo" className="w-[50px] cursor-pointer" />
+        </Link>
       </div>
 
       {/* Menu */}
       <div className="hidden md:flex">
         <ul className="hidden md:flex">
-          <li>
-            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <li className="hover:text-pink-600">
+            <Link to="home" smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li>
-            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+          <li className="hover:text-pink-600">
+            <Link to="about" smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              to="skills"
-              smooth={true}
-              duration={500}
-            >
+          <li className="hover:text-pink-600">
+            <Link to="skills" smooth={true} duration={500}>
               Skills
             </Link>
           </li>
-          <li>
-            <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+          <li className="hover:text-pink-600">
+            <Link to="work" smooth={true} duration={500}>
               Portfolio
             </Link>
           </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              to="contact"
-              smooth={true}
-              duration={500}
-            >
+          <li className="hover:text-pink-600">
+            <Link to="contact" smooth={true} duration={500}>
               Contact
             </Link>
           </li>
@@ -66,27 +58,27 @@ const NavBar = () => {
       </div>
       {/* Mobile Menu */}
       <ul className={!nav ? "hidden" : hamburgerStyling}>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Portfolio
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -99,7 +91,8 @@ const NavBar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              target="_blank"
+              href="https://www.linkedin.com/in/luis46rosas/"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -107,15 +100,16 @@ const NavBar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#33333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              target="_blank"
+              href="https://github.com/LuiRo07"
             >
               GitHub <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6FC2B0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="mailto: luis_rm142@yahoo.com"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -135,3 +129,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+// How do i import sensitive data onto a file?
