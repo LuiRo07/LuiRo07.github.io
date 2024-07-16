@@ -129,5 +129,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// How do i import sensitive data onto a file?

@@ -4,6 +4,7 @@ import workImg from "../assets/testWorkImg.jpg";
 const Work = () => {
   return (
     <div
+      id="work"
       name="work"
       className="bg-primaryBlue w-full md:h-screen text-gray-300"
     >
