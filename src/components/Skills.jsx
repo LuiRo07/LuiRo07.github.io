@@ -6,6 +6,7 @@ import JavaScript from "../assets/javascript.png";
 import Node from "../assets/node.png";
 import ReactIcon from "../assets/react.png";
 import Github from "../assets/github.png";
+import Git from "../assets/git.png";
 
 const Skills = () => {
   return (
@@ -48,6 +49,10 @@ const Skills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Github} alt="Github icon" />
             <p className="my-4">Github</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Git} alt="Git icon" />
+            <p className="my-4">Git</p>
           </div>
         </div>
       </div>
