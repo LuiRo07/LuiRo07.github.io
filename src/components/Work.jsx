@@ -2,6 +2,7 @@ import React from "react";
 import resultSummaryComponentImg from "/project-screenshots/results-summary-component-screenshot.png";
 import recipePageImg from "/project-screenshots/recipe-page-screenshot.png";
 import productListWithCart from "/project-screenshots/product-list-with-cart-screenshot.png";
+import poveriaStore from "/project-screenshots/Site-Preview.png";
 
 const Work = () => {
   return (
@@ -93,6 +94,30 @@ const Work = () => {
                 </a>
                 <a
                   href="https://github.com/LuiRo07/product-list-with-cart"
+                  target="_blank"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${poveriaStore})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider"></span>
+              <div className="pt-8 text-center">
+                <a href="https://poveria-apparel.netlify.app" target="_blank">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/LuiRo07/Poveria-Apparel"
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
