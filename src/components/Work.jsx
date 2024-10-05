@@ -27,7 +27,7 @@ const Work = () => {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="md:opacity-0 opacity-100 group-hover:md:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider"></span>
               <div className="pt-8 text-center">
                 <a
@@ -54,7 +54,7 @@ const Work = () => {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="md:opacity-0 group-hover:md:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider"></span>
               <div className="pt-8 text-center">
                 <a
@@ -81,7 +81,7 @@ const Work = () => {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="md:opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider"></span>
               <div className="pt-8 text-center">
                 <a
@@ -108,7 +108,7 @@ const Work = () => {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="md:opacity-0 opacity-100 group-hover:md:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider"></span>
               <div className="pt-8 text-center">
                 <a href="https://poveria-apparel.netlify.app" target="_blank">
