@@ -14,17 +14,19 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">
-            <p>I'm Luis, nice to meet you, Please take a look around.</p>
+            <p>I'm Luis, feel free to take a look around.</p>
           </div>
           <div>
-            <p>
-              I am a passionate about building User Interfaces and excellent
+            <p className="text-lg ">
+              In my spare time I like to play guitar, listen to music,
+              spend time with friends, and go hiking on different trails.
+              As a software developer, I am passionate about building User Interfaces and
               software that improves the lives of those around me. I specialize
-              in creating software for clients ranging from individuals and
-              small-businesses all the way to large enterprise corporations.
-              What would you do if you had a software expert available at your
-              fingertips?
-            </p>
+              in building aesthetically pleasing user interfaces that provide 
+              a pleasant user experience. 
+              <br></br>
+              <span className="text-pink-500">P.S. I built this website using
+              modern technologies</span></p>
           </div>
         </div>
       </div>
