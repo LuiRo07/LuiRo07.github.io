@@ -24,7 +24,7 @@ const Work = () => {
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${resultSummaryComponentImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="bg-gray-700 hover:bg-blend-soft-light shadow-lg shadow-[#4899ff] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="md:opacity-0 opacity-100 group-hover:md:opacity-100">
@@ -51,7 +51,7 @@ const Work = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${recipePageImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="bg-gray-700 hover:bg-blend-soft-light shadow-lg shadow-[#4899ff] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="md:opacity-0 group-hover:md:opacity-100">
@@ -78,7 +78,7 @@ const Work = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${productListWithCart})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="bg-gray-700 hover:bg-blend-soft-light shadow-lg shadow-[#4899ff] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="md:opacity-0 group-hover:opacity-100">
@@ -105,7 +105,7 @@ const Work = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${poveriaStore})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="bg-gray-700 hover:bg-blend-soft-light shadow-lg shadow-[#4899ff] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="md:opacity-0 opacity-100 group-hover:md:opacity-100">
