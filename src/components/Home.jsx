@@ -7,17 +7,17 @@ const Home = () => {
     <div name="home" className="bg-primaryBlue w-full h-screen">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-pink-600 text-xl">Hi, my name is</p>
+        <p className="text-pink-600 text-xl">Hi, I'm</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Luis Rosas
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I'm a Frontend Developer
+          A Frontend Developer
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I'm a frontend Developer specializing in building and occassionally
-          designing exception digital experiences. Currently, I'm focused on
-          building responsive web applications.
+          I'm a Developer who specializes in building beautiful UIs and
+          exceptional digital experiences. From small project ideas to large and scalable
+          applications, let me help bring your ideas to life.
         </p>
         <div>
           <Link to="work" smooth={true} duration={500}>
