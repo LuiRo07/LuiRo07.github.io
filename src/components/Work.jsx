@@ -1,9 +1,12 @@
 import React from "react";
+
+// project screenshots
 import resultSummaryComponentImg from "/project-screenshots/results-summary-component-screenshot.png";
 import recipePageImg from "/project-screenshots/recipe-page-screenshot.png";
 import dessertEcommerceImg from "/project-screenshots/tasty-desserts-screenshot.png";
 import poveriaStore from "/project-screenshots/Site-Preview.png";
 import manageLandingPage from "/project-screenshots/manage-landing-page.png";
+import workoutTracker from "/project-screenshots/workout-tracker-app.png";
 
 const Work = () => {
   return (
@@ -143,6 +146,29 @@ const Work = () => {
                 </a>
                 <a
                   href="https://github.com/LuiRo07/manage-landing-page"
+                  target="_blank"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${workoutTracker})` }}
+            className="bg-gray-700 hover:bg-blend-soft-light shadow-lg shadow-[#4899ff] group container rounded-md flex justify-center items-center mx-auto content-div">
+            {/* Hover Effects */}
+            <div className="md:opacity-0 opacity-100 group-hover:md:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider"></span>
+              <div className="pt-8 text-center">
+                <a href="https://workoutbudd.netlify.app/" target="_blank">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/LuiRo07/Workout-Buddy"
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
