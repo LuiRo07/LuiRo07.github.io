@@ -10,7 +10,7 @@ import MongoDB from "../assets/icons/MongoDB.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="text-gray-300 w-full h-screen mb-[10vh] sm:mb-0">
+    <div name="skills" className="text-gray-300 w-full h-screen mb-[15vh] sm:mb-0">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
