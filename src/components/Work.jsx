@@ -13,7 +13,7 @@ const Work = () => {
     <div
       id="work"
       name="work"
-      className="w-full md:h-screen text-gray-300"
+      className="w-full md:h-screen text-gray-300 mb-[5vh] sm:mb-0"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
