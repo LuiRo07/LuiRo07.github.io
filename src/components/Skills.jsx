@@ -1,13 +1,12 @@
-import React from "react";
-
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import Node from "../assets/node.png";
-import ReactIcon from "../assets/react.png";
-import Github from "../assets/github.png";
-import Git from "../assets/git.png";
-import tailwindCSS from "../assets/tailwind-css.png";
+import HTML from "../assets/icons/html.png";
+import CSS from "../assets/icons/css.png";
+import JavaScript from "../assets/icons/javascript.png";
+import Node from "../assets/icons/node.png";
+import ReactIcon from "../assets/icons/react.png";
+import Github from "../assets/icons/github.png";
+import Git from "../assets/icons/git.png";
+import TailWindCSS from "../assets/icons/tailwind-css.png";
+import MongoDB from "../assets/icons/MongoDB.png";
 
 const Skills = () => {
   return (
@@ -58,10 +57,18 @@ const Skills = () => {
           <div className="shadow-md shadow-[#4899ff] hover:scale-110 duration-500">
             <img
               className="w-20 mx-auto"
-              src={tailwindCSS}
+              src={TailWindCSS}
               alt="tailwind css icon"
             />
             <p className="my-4">Tailwind CSS</p>
+          </div>
+          <div className="shadow-md shadow-[#4899ff] hover:scale-110 duration-500">
+            <img
+              className="w-20 mx-auto"
+              src={MongoDB}
+              alt="MongoDB icon"
+            />
+            <p className="my-4">Mongo DB</p>
           </div>
         </div>
       </div>

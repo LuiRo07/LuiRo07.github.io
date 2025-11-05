@@ -1,10 +1,10 @@
 import React from "react";
 
 // project screenshots
-import resultSummaryComponentImg from "/project-screenshots/results-summary-component-screenshot.png";
-import recipePageImg from "/project-screenshots/recipe-page-screenshot.png";
-import dessertEcommerceImg from "/project-screenshots/tasty-desserts-screenshot.png";
-import poveriaStore from "/project-screenshots/Site-Preview.png";
+import resultSummaryComponentImg from "/project-screenshots/results-summary-component.png";
+import recipePageImg from "/project-screenshots/recipe-page.png";
+import dessertEcommerceImg from "/project-screenshots/desserts-ecommerce.png";
+import poveriaStore from "/project-screenshots/poveria-ecommerce.png";
 import manageLandingPage from "/project-screenshots/manage-landing-page.png";
 import workoutTracker from "/project-screenshots/workout-tracker-app.png";
 
